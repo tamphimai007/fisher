@@ -18,7 +18,7 @@ connectDB()
 app.use(morgan('dev'))
 app.use(cors())
 app.use(bodyParse.json({ limit: '10mb' }))
-app.use("/uploads", express.static("uploads"));
+app.use(express.static('public'));
 // Route 1
 // app.get('/product', (req, res) => {
 //     res.send('Hello Endpoint 555')
